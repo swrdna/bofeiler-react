@@ -1,7 +1,7 @@
 import { Navigate } from 'react-router-dom';
 
+import Layout from '@/components/layout/layout';
 import { useAuth } from '@/providers/auth.provider';
-import Layout from '../layout/layout';
 
 const RouteWrapper = () => {
   const { user } = useAuth();
