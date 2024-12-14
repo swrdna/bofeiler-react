@@ -7,7 +7,7 @@ import { useAuth } from '@/providers/auth.provider';
 const Routes = () => {
   const { user } = useAuth();
 
-  const authenticatedPath = [
+  const authenticatedRoutes = [
     {
       element: <RouteWrapper />,
       errorElement: <ErrorBoundary isPageNotFound />,
@@ -24,7 +24,7 @@ const Routes = () => {
     },
   ];
 
-  const unauthenticatedPath = [
+  const publicRoutes = [
     {
       path: '/login',
       element: (
@@ -36,8 +36,8 @@ const Routes = () => {
   ];
 
   const router = createBrowserRouter([
-    ...(!user ? unauthenticatedPath : []),
-    ...authenticatedPath,
+    ...(!user ? publicRoutes : []),
+    ...authenticatedRoutes,
   ]);
 
   return <RouterProvider router={router} />;
