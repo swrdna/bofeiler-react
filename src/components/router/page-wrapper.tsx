@@ -1,6 +1,6 @@
 import { ReactNode, Suspense } from 'react';
 
-import ErrorBoundary from '@/components/router/error-boundary';
+import { ErrorBoundary } from '@/components/router';
 
 const PageWrapper = ({ children }: { children: ReactNode }) => (
   <ErrorBoundary>
