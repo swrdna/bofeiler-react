@@ -5,11 +5,11 @@
 
 # Welcome
 
-Frontend project boilerplate
+Frontend project boilerplate for React lovers
 
 # Stacks
 
-- FarmFE
+- [FarmFE](https://www.farmfe.org)
 - React
 - TypeScript
 - TailwindCSS
