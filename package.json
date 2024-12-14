@@ -1,5 +1,5 @@
 {
-  "name": "bofeiler",
+  "name": "bofeiler-react",
   "version": "1.0.0",
   "scripts": {
     "dev": "farm start",
