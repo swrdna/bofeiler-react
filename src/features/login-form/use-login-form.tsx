@@ -23,7 +23,7 @@ const useLoginForm = () => {
 
           navigate('/');
         } else {
-          return { form: 'Invalid username and password', fields: {} };
+          return { form: 'Invalid username or password', fields: {} };
         }
 
         return null;
