@@ -1,7 +1,9 @@
+import LoginPage from '@/pages/login.page';
+
 import './main.css';
 
 const Main = () => {
-  return <div className="h-screen bg-slate-300">Main</div>;
+  return <LoginPage />;
 };
 
 export default Main;
