@@ -1,0 +1,7 @@
+{
+  "name": "Bofeiler React",
+  "short_name": "Bofeiler",
+  "description": "React frontend boilerplate",
+  "display": "standalone",
+  "background_color": "#f5f5f5"
+}

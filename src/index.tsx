@@ -1,11 +1,13 @@
-import React from 'react';
+import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 
-import { Main } from './main';
-
-import './index.css';
+import Main from './main';
 
 const container = document.querySelector('#root');
-const root = createRoot(container);
+const root = createRoot(container as Element);
 
-root.render(<Main />);
+root.render(
+  <StrictMode>
+    <Main />
+  </StrictMode>,
+);
