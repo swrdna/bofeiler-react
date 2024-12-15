@@ -4,7 +4,7 @@
   "scripts": {
     "dev": "farm start",
     "start": "farm start",
-    "build": "farm build",
+    "build": "farm clean && farm build",
     "preview": "farm preview",
     "clean": "farm clean"
   },
