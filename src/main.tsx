@@ -1,9 +1,12 @@
-import React, { useState } from "react";
-import "./main.css";
-import reactLogo from "./assets/react.svg";
-import FarmLogo from "./assets/logo.png";
+import React, { useState } from 'react';
+
+import './main.css';
+
+import FarmLogo from './assets/logo.png';
+import reactLogo from './assets/react.svg';
+
 export function Main() {
-  const [count, setCount] = useState(0);
+  const [count, setCount] = useState('0');
 
   return (
     <>
