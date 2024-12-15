@@ -1,6 +1,7 @@
-import { Navigate, Outlet } from 'react-router-dom';
+import { Navigate } from 'react-router-dom';
 
 import { useAuth } from '@/providers/auth.provider';
+import Layout from '../layout/layout';
 
 const RouteWrapper = () => {
   const { user } = useAuth();
@@ -9,7 +10,7 @@ const RouteWrapper = () => {
     return <Navigate to="/login" />;
   }
 
-  return <Outlet />;
+  return <Layout />;
 };
 
 export default RouteWrapper;
