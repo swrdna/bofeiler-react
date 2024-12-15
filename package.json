@@ -12,6 +12,7 @@
     "@farmfe/js-plugin-svgr": "^1.8.0",
     "@radix-ui/react-label": "^2.1.1",
     "@radix-ui/react-slot": "^1.1.1",
+    "@tanstack/react-form": "^0.40.2",
     "@tanstack/react-query": "^5.62.7",
     "axios": "^1.7.9",
     "class-variance-authority": "^0.7.1",
