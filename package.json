@@ -6,7 +6,9 @@
     "start": "farm start",
     "build": "farm clean && farm build",
     "preview": "farm preview",
-    "clean": "farm clean"
+    "clean": "farm clean",
+    "lint": "eslint src/**/*.{ts,tsx} --fix",
+    "prettier": "prettier --write src/*"
   },
   "dependencies": {
     "@farmfe/js-plugin-svgr": "^1.8.0",
@@ -43,9 +45,10 @@
     "@typescript-eslint/parser": "^8.18.0",
     "autoprefixer": "^10.4.20",
     "core-js": "^3.36.1",
-    "eslint": "^9.17.0",
+    "eslint": "^8.56.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-airbnb-typescript": "^18.0.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-import": "^2.31.0",
     "eslint-plugin-jsx-a11y": "^6.10.2",
