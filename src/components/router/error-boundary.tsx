@@ -1,8 +1,8 @@
 import { Component, ReactNode } from 'react';
 
 interface Props {
-  children?: ReactNode;
-  isPageNotFound?: boolean;
+  children: ReactNode;
+  isPageNotFound: boolean;
 }
 
 interface State {
@@ -26,12 +26,10 @@ export class ErrorBoundary extends Component<Props, State> {
   render() {
     if (this.props.isPageNotFound) {
       return (
-        <>
-          <div>
-            <h1>404</h1>
-            <p>Sorry, the page that you are looking for is not found.</p>
-          </div>
-        </>
+        <div>
+          <h1>404</h1>
+          <p>Sorry, the page that you are looking for is not found.</p>
+        </div>
       );
     }
 

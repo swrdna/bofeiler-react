@@ -26,17 +26,17 @@ interface IUseAuth {
 const AuthContext = createContext({} as IUseAuth);
 
 const AuthProvider = ({ children }: { children: ReactNode }) => {
-  const [user, setUser_] = useState(
+  const [user, _setUser] = useState(
     JSON.parse(localStorage.getItem(AUTH_STORAGE_KEY)!),
   );
 
   const setUser = (newUser: IUser) => {
-    setUser_(newUser);
+    _setUser(newUser);
   };
 
   const logout = () => {
     localStorage.removeItem(AUTH_STORAGE_KEY);
-    setUser_(null);
+    _setUser(null);
   };
 
   useEffect(() => {
@@ -61,8 +61,6 @@ const AuthProvider = ({ children }: { children: ReactNode }) => {
   );
 };
 
-export const useAuth = (): IUseAuth => {
-  return useContext(AuthContext);
-};
+export const useAuth = (): IUseAuth => useContext(AuthContext);
 
 export default AuthProvider;
