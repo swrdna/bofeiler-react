@@ -36,17 +36,15 @@ const LoginForm = () => {
 
         <form.Field name="password">
           {(field) => (
-            <>
-              <Input
-                id={field.name}
-                name={field.name}
-                value={field.state.value}
-                onChange={(e) => field.handleChange(e.target.value)}
-                type="password"
-                placeholder="password: indonesia!!"
-                required
-              />
-            </>
+            <Input
+              id={field.name}
+              name={field.name}
+              value={field.state.value}
+              onChange={(e) => field.handleChange(e.target.value)}
+              type="password"
+              placeholder="password: indonesia!!"
+              required
+            />
           )}
         </form.Field>
 
