@@ -45,7 +45,9 @@
     "import/no-unresolved": "off",
     "import/extensions": "off",
     "import/prefer-default-export": "off",
+    "import/no-named-as-default": "off",
     "object-curly-newline": "off",
+    "class-methods-use-this": "off",
     "react/function-component-definition": [
       "error",
       {
@@ -58,7 +60,8 @@
     "react/jsx-filename-extension": "off",
     "react/destructuring-assignment": "off",
     "react/require-default-props": "off",
-    "react/jsx-props-no-spreading": "off"
+    "react/jsx-props-no-spreading": "off",
+    "react/no-children-prop": "off"
   },
   "settings": {
     "import/resolver": {
