@@ -1,8 +1,8 @@
 import { Component, ReactNode } from 'react';
 
 interface Props {
-  children: ReactNode;
-  isPageNotFound: boolean;
+  children?: ReactNode;
+  isPageNotFound?: boolean;
 }
 
 interface State {
@@ -19,7 +19,7 @@ export class ErrorBoundary extends Component<Props, State> {
     return { hasError: true };
   }
 
-  componentDidCatch(error: any) {
+  componentDidCatch(error: Error) {
     console.log(error);
   }
 
