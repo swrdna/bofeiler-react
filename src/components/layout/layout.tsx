@@ -1,16 +1,15 @@
 import { Outlet } from 'react-router-dom';
 
-import { AppSidebar } from '@/components/layout';
-import { SidebarInset, SidebarProvider } from '@/components/ui/sidebar';
+import AppSidebar from './app-sidebar';
 
 const Layout = () => {
   return (
-    <SidebarProvider>
+    <div className="flex h-screen">
       <AppSidebar />
-      <SidebarInset className="px-5 py-4">
+      <div className="p-4">
         <Outlet />
-      </SidebarInset>
-    </SidebarProvider>
+      </div>
+    </div>
   );
 };
 

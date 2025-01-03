@@ -23,6 +23,7 @@ const LoginForm = () => {
                 type="text"
                 placeholder="username: admin"
                 required
+                className="border py-2 px-4 rounded bg-slate-50"
               />
 
               {field.state.meta.errors ? (
@@ -42,6 +43,7 @@ const LoginForm = () => {
               type="password"
               placeholder="password: indonesia!!"
               required
+              className="border py-2 px-4 rounded bg-slate-50"
             />
           )}
         </form.Field>
@@ -54,7 +56,7 @@ const LoginForm = () => {
 
               <button
                 type="submit"
-                className="w-full font-bold"
+                className="w-full font-bold bg-slate-800 px-4 py-2 rounded text-white"
                 disabled={Boolean(isSubmitting)}
               >
                 {isSubmitting ? 'Submitting...' : 'Login'}
