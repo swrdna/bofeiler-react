@@ -1,5 +1,3 @@
-import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
 import useLoginForm from './use-login-form';
 
 const LoginForm = () => {
@@ -17,7 +15,7 @@ const LoginForm = () => {
         <form.Field name="username">
           {(field) => (
             <>
-              <Input
+              <input
                 id={field.name}
                 name={field.name}
                 value={field.state.value}
@@ -36,17 +34,15 @@ const LoginForm = () => {
 
         <form.Field name="password">
           {(field) => (
-            <>
-              <Input
-                id={field.name}
-                name={field.name}
-                value={field.state.value}
-                onChange={(e) => field.handleChange(e.target.value)}
-                type="password"
-                placeholder="password: indonesia!!"
-                required
-              />
-            </>
+            <input
+              id={field.name}
+              name={field.name}
+              value={field.state.value}
+              onChange={(e) => field.handleChange(e.target.value)}
+              type="password"
+              placeholder="password: indonesia!!"
+              required
+            />
           )}
         </form.Field>
 
@@ -56,13 +52,13 @@ const LoginForm = () => {
             <>
               <em className="text-red-500 py-2">{errors}</em>
 
-              <Button
+              <button
                 type="submit"
                 className="w-full font-bold"
                 disabled={Boolean(isSubmitting)}
               >
                 {isSubmitting ? 'Submitting...' : 'Login'}
-              </Button>
+              </button>
             </>
           )}
         />

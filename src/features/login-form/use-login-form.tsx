@@ -10,7 +10,9 @@ const useLoginForm = () => {
   const form = useForm({
     validators: {
       onSubmitAsync: async ({ value }) => {
-        await new Promise((resolve) => setTimeout(resolve, 2000));
+        await new Promise((resolve) => {
+          setTimeout(resolve, 2000);
+        });
 
         if (value.password === 'indonesia!!') {
           setUser({
