@@ -40,7 +40,7 @@ const AppSidebar = () => {
             </div>
             Username
           </button>
-          <ul className="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow-lg">
+          <ul className="dropdown-content bg-base-100 menu rounded-box z-[1] w-52 p-2 border border-base-200">
             <li>
               <div className="flex cursor-pointer gap-2">
                 <svg
