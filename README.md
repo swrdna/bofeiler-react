@@ -6,7 +6,7 @@
 
 # Welcome
 
-Frontend project boilerplate for React lovers
+React frontend project boilerplate
 
 # Stacks
 
@@ -15,6 +15,11 @@ Frontend project boilerplate for React lovers
 - TypeScript
 - TailwindCSS
 - PNPM
+
+# UI Libs
+
+- daisyUI (branch [`daisyui`](https://github.com/swrdna/bofeiler-react/tree/daisyui))
+- shadcn/ui (branch [`shadcn`](https://github.com/swrdna/bofeiler-react/tree/shadcn))
 
 # How to start
 
