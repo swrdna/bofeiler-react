@@ -23,13 +23,19 @@ React frontend project boilerplate
 
 # How to start
 
+Create env file
+
+```
+cp .env.example .env
+```
+
 Install dependencies
 
 ```
 pnpm install
 ```
 
-Start the project
+Run the project
 
 ```
 pnpm dev
