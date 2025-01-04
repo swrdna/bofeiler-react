@@ -13,8 +13,8 @@ React frontend project boilerplate
 - FarmFE
 - React
 - TypeScript
-- TailwindCSS
-- PNPM
+- Tailwind CSS
+- pnpm
 
 # UI Libs
 
