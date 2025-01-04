@@ -1,12 +1,4 @@
-import {
-  ChevronRight,
-  Database,
-  LayoutDashboard,
-  ScanBarcode,
-  Settings2,
-  Truck,
-  WalletCards,
-} from 'lucide-react';
+import { ChevronRight, File, LayoutDashboard } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 import {
@@ -26,105 +18,17 @@ import {
 
 const items = [
   {
-    title: 'Inventory',
+    title: 'Parent',
     url: '#',
-    icon: Truck,
+    icon: File,
     isActive: true,
     items: [
       {
-        title: 'Items',
+        title: 'Child 1',
         url: '#',
       },
       {
-        title: 'Purchases',
-        url: '#',
-      },
-      {
-        title: 'Stock Opname',
-        url: '#',
-      },
-      {
-        title: 'Transfer',
-        url: '#',
-      },
-      {
-        title: 'Return',
-        url: '#',
-      },
-    ],
-  },
-  {
-    title: 'POS',
-    url: '#',
-    icon: ScanBarcode,
-    items: [
-      {
-        title: 'Drawers',
-        url: '#',
-      },
-      {
-        title: 'Cashier',
-        url: '#',
-      },
-      {
-        title: 'Transactions',
-        url: '#',
-      },
-      {
-        title: 'Return',
-        url: '#',
-      },
-    ],
-  },
-  {
-    title: 'Finance',
-    url: '#',
-    icon: WalletCards,
-    items: [
-      {
-        title: 'Expenses',
-        url: '#',
-      },
-      {
-        title: 'Incomes',
-        url: '#',
-      },
-      {
-        title: 'Debt',
-        url: '#',
-      },
-      {
-        title: 'Payment',
-        url: '#',
-      },
-    ],
-  },
-  {
-    title: 'Master Data',
-    url: '#',
-    icon: Database,
-    items: [
-      {
-        title: 'Users',
-        url: '#',
-      },
-      {
-        title: 'Members',
-        url: '#',
-      },
-    ],
-  },
-  {
-    title: 'Settings',
-    url: '#',
-    icon: Settings2,
-    items: [
-      {
-        title: 'General',
-        url: '#',
-      },
-      {
-        title: 'Printer',
+        title: 'Child 2',
         url: '#',
       },
     ],
@@ -174,6 +78,14 @@ const NavMenu = () => {
             </SidebarMenuItem>
           </Collapsible>
         ))}
+        <SidebarMenuItem>
+          <SidebarMenuButton tooltip="Reports" asChild>
+            <Link to="/">
+              <File />
+              <span>Reports</span>
+            </Link>
+          </SidebarMenuButton>
+        </SidebarMenuItem>
       </SidebarMenu>
     </SidebarGroup>
   );
