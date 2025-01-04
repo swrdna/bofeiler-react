@@ -6,17 +6,27 @@
 
 # Welcome
 
-Frontend project boilerplate for React lovers
+React frontend project boilerplate
 
 # Stacks
 
 - FarmFE
 - React
 - TypeScript
-- TailwindCSS
-- PNPM
+- Tailwind CSS
+- pnpm
+
+# UI Lib
+
+- [daisyUI](https://daisyui.com)
 
 # How to start
+
+Create env file
+
+```
+cp .env.example .env
+```
 
 Install dependencies
 
@@ -24,7 +34,7 @@ Install dependencies
 pnpm install
 ```
 
-Start the project
+Run the project
 
 ```
 pnpm dev
