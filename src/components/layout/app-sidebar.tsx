@@ -8,8 +8,8 @@ const AppSidebar = () => {
   const { isDarkTheme, setTheme } = useTheme();
 
   return (
-    <div className="flex flex-col justify-between p-4 bg-base-200 h-full w-1/5">
-      <ul className="menu bg-base-200 rounded-box w-56">
+    <div className="flex flex-col justify-between p-4 bg-base-200 h-full w-1/4 lg:w-1/5">
+      <ul className="menu bg-base-200 rounded-box">
         <li>
           <Link to="/">Dashboard</Link>
         </li>
@@ -29,7 +29,7 @@ const AppSidebar = () => {
         </li>
       </ul>
 
-      <ul className="menu bg-base-200 rounded-box w-56">
+      <ul className="menu bg-base-200 rounded-box">
         <li className="dropdown dropdown-right dropdown-end">
           <button type="button" tabIndex={0} className="w-full">
             <div className="avatar">
