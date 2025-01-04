@@ -16,7 +16,7 @@ React frontend project boilerplate
 - Tailwind CSS
 - pnpm
 
-# UI Libs
+# UI Lib
 
 - [shadcn/ui](https://ui.shadcn.com)
 
