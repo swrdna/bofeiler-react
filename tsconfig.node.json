@@ -7,5 +7,5 @@
     "allowSyntheticDefaultImports": true,
     "strict": true
   },
-  "include": ["farm.config.ts", "vitest.config.ts"]
+  "include": ["farm.config.mts", "vitest.config.mts"]
 }
