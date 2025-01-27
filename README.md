@@ -15,6 +15,9 @@ React frontend project boilerplate
 - TypeScript
 - Tailwind CSS
 - pnpm
+- vitest
+- React Testing Library
+- jsdom
 
 # UI Lib
 
@@ -24,18 +27,38 @@ React frontend project boilerplate
 
 Create env file
 
-```
+```bash
 cp .env.example .env
 ```
 
 Install dependencies
 
-```
+```bash
 pnpm install
 ```
 
 Run the project
 
-```
+```bash
 pnpm dev
+```
+
+# How to test
+
+Run the test
+
+```bash
+pnpm test
+```
+
+Run the test for single file
+
+```bash
+pnpm test -- filename.test
+```
+
+Run the test with coverage result
+
+```bash
+pnpm test:ci
 ```
