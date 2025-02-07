@@ -78,7 +78,7 @@ const LoginForm = () => {
           selector={(state) => [state.isSubmitting, state.errors]}
           children={([isSubmitting, errors]) => (
             <>
-              <em className="text-red-500 py-2">{errors}</em>
+              <em className="py-2 text-red-500">{errors}</em>
 
               <button
                 type="submit"

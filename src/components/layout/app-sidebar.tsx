@@ -8,7 +8,7 @@ const AppSidebar = () => {
   const { isDarkTheme, setTheme } = useTheme();
 
   return (
-    <div className="flex flex-col justify-between p-4 bg-base-200 h-full w-1/4 lg:w-1/5">
+    <div className="bg-base-200 flex h-full w-1/4 flex-col justify-between p-4 lg:w-1/5">
       <ul className="menu bg-base-200 rounded-box">
         <li>
           <Link to="/">Dashboard</Link>
@@ -42,7 +42,7 @@ const AppSidebar = () => {
             </div>
             Username
           </button>
-          <ul className="dropdown-content bg-base-100 menu rounded-box z-[1] w-52 p-2 border border-base-200">
+          <ul className="dropdown-content bg-base-100 menu rounded-box border-base-200 z-[1] w-52 border p-2">
             <li>
               <div className="flex cursor-pointer gap-2">
                 <svg
