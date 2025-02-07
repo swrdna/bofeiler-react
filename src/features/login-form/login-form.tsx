@@ -23,7 +23,7 @@ const LoginForm = () => {
                 type="text"
                 placeholder="username: admin"
                 required
-                className="border py-2 px-4 rounded bg-slate-50"
+                className="rounded border bg-slate-50 px-4 py-2"
               />
 
               {field.state.meta.errors ? (
@@ -43,7 +43,7 @@ const LoginForm = () => {
               type="password"
               placeholder="password: indonesia!!"
               required
-              className="border py-2 px-4 rounded bg-slate-50"
+              className="rounded border bg-slate-50 px-4 py-2"
             />
           )}
         </form.Field>
@@ -52,11 +52,11 @@ const LoginForm = () => {
           selector={(state) => [state.isSubmitting, state.errors]}
           children={([isSubmitting, errors]) => (
             <>
-              <em className="text-red-500 py-2">{errors}</em>
+              <em className="py-2 text-red-500">{errors}</em>
 
               <button
                 type="submit"
-                className="w-full font-bold bg-slate-800 px-4 py-2 rounded text-white"
+                className="w-full rounded bg-slate-800 px-4 py-2 font-bold text-white"
                 disabled={Boolean(isSubmitting)}
               >
                 {isSubmitting ? 'Submitting...' : 'Login'}

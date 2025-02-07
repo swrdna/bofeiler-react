@@ -6,7 +6,7 @@ const AppSidebar = () => {
   const { logout } = useAuth();
 
   return (
-    <div className="flex flex-col justify-between p-4 bg-gray-200 h-full w-1/5">
+    <div className="flex h-full w-1/5 flex-col justify-between bg-gray-200 p-4">
       <div className="flex flex-col gap-2">
         <Link to="/">Dashboard</Link>
         <Link to="/items">Items</Link>
