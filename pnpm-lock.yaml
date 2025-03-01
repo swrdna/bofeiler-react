@@ -8,6 +8,12 @@ importers:
 
   .:
     dependencies:
+      '@farmfe/js-plugin-svgr':
+        specifier: ^1.9.0
+        version: 1.9.0(@farmfe/core@1.6.6)(typescript@5.7.2)
+      '@farmfe/js-plugin-tailwindcss':
+        specifier: ^0.0.7
+        version: 0.0.7
       '@tanstack/react-form':
         specifier: ^0.41.4
         version: 0.41.4(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.2)
@@ -39,12 +45,6 @@ importers:
       '@farmfe/core':
         specifier: ^1.6.6
         version: 1.6.6
-      '@farmfe/js-plugin-svgr':
-        specifier: ^1.9.0
-        version: 1.9.0(@farmfe/core@1.6.6)(typescript@5.7.2)
-      '@farmfe/js-plugin-tailwindcss':
-        specifier: ^0.0.7
-        version: 0.0.7
       '@farmfe/plugin-react':
         specifier: ^1.2.6
         version: 1.2.6
