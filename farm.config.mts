@@ -1,7 +1,7 @@
 import path from 'path';
 import { defineConfig, loadEnv } from '@farmfe/core';
-import farmPostcssPlugin from '@farmfe/js-plugin-postcss';
 import farmJsPluginSvgr from '@farmfe/js-plugin-svgr';
+import farmJsTailwindcss from '@farmfe/js-plugin-tailwindcss';
 
 interface IConfigArgs {
   mode: 'development' | 'test' | 'production';
@@ -11,7 +11,7 @@ export default ({ mode }: IConfigArgs) => {
   const env = loadEnv(mode, process.cwd());
 
   return defineConfig({
-    plugins: ['@farmfe/plugin-react', farmJsPluginSvgr(), farmPostcssPlugin()],
+    plugins: ['@farmfe/plugin-react', farmJsPluginSvgr(), farmJsTailwindcss()],
     compilation: {
       sourcemap: mode !== 'production',
       resolve: {
